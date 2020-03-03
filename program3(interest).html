@@ -1,0 +1,43 @@
+<html>
+<head>
+    <script>
+        function calculate1(){
+           p=document.getElementById("p").value;
+           t=document.getElementById("t").value;
+           r=document.getElementById("r").value;
+           result=document.getElementById("result");
+           result.innerHTML="The interest is"+(p*t*r/100);
+        }
+
+        function calculate2(){
+           p2=document.getElementById("p2").value;
+           t2=document.getElementById("t2").value;
+           r2=document.getElementById("r2").value;
+           cmd=document.getElementById("cmd").value;
+           r3=r2/100;
+           x=(1+r3);
+           xnt=Math.pow(x,cmd);
+           y=p2*xnt;
+           result2=document.getElementById("result2");
+           result2.innerHTML="The interest is"+y;
+        }
+    </script>
+<title>simple interest&compound interest</title>
+</head>
+<body>
+    <h1>simple interest</h1>
+    principal:<input type="text" id="p"><br><br>
+    Time Period:<input type="text" id="t"><br><br>
+    Rate of interest:<input type="text" id="r"><br><br>
+ <button onclick="calculate1()">calculate</button>
+ <p id="result"></p>
+<br><br>
+ <h1>compound interest</h1>
+    principal:<input type="text" id="p2"><br><br>
+    Time Period:<input type="text" id="t2"><br><br>
+    Rate of interest:<input type="text" id="r2"><br><br>
+    rate of compound per year:<input type="text" id="cmd"><br><br>
+ <button onclick="calculate2()">calculate compound interest</button>
+ <p id="result2"></p>
+</body>
+</html>
