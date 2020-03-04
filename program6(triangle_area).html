@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>total,average&percentage</title>
+    <script>
+        function calculate1(){
+            var base=document.form1.base1.value;
+            var height=document.form1.height1.value;
+           
+            document.write("<p>The area is"+(base*height/2)+"<p>");
+        }
+    </script>
+</head>
+<body>
+    <h1>calculate area of triangle</h1>
+   
+<form name="form1">
+   Type Base:<input type="text" name="base1"><br><br>
+   Type height:<input type="text" name="height1"><br><br>
+    
+     <!-- result:<input type="text" id="result1"><br><br>  -->
+ <button onclick="calculate1()">calculate area</button><br><br>
+ 
+ </form>
+ 
+
+ 
+</body>
+</html>
