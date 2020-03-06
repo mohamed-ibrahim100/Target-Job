@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <style>
+        p#result2 {
+    background-color: yellow;
+}
+    </style>
+    <title>calculate squareroot</title>
+    <script>
+        
+
+        function calculate2(){
+           p2=document.getElementById("p2").value;
+        
+           y=Math.sqrt(p2);
+           result2=document.getElementById("result2");
+           result2.innerHTML="The squareroot is"+y;
+        }
+    </script>
+</head>
+<body>
+    <h1>calculate squareroot</h1>
+   
+    
+
+    
+   enter a number:<input type="text" id="p2"><br><br>
+    
+ <button onclick="calculate2()">calculate</button>
+ <p id="result2"></p>
+ 
+
+ 
+</body>
