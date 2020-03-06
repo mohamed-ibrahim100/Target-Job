@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <style>
+        p#result2,#result3,#result4 {
+    background-color: yellow;
+}
+    </style>
+    <title>calculate squareroot</title>
+    <script>
+        
+
+        function calculate2(){
+           p2=document.getElementById("p2").value;
+           
+        
+           y=p2/365;
+           
+           l=p2/7;
+           m=p2/30;
+
+
+           result2=document.getElementById("result2");
+           result3=document.getElementById("result3");
+           result4=document.getElementById("result4");
+           result2.innerHTML="The number of year is"+y;
+           result3.innerHTML="The number of week is"+l;
+           result4.innerHTML="The number of month is"+m;
+        }
+    </script>
+</head>
+<body>
+    <h1>convert number of days to year ,weeks& months</h1>
+   
+    
+
+    
+   enter the number of days:<input type="text" id="p2"><br><br>
+   
+    
+ <button onclick="calculate2()">calculate</button>
+ <p id="result2"></p>
+ <p id="result3"></p>
+ <p id="result4"></p>
+ 
+
+ 
+</body>
