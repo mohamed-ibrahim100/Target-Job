@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+ <title>radius to diameter and circumference</title>
+ <body>
+ <h2>Radius to diameter & circumference</h2>
+ <p>Enter the value in radius :</p>
+ 
+ <input id="inputF" type="number" placeholder="Radius" >
+ <button onclick="conversion()">calculate diameter&circumference </button>
+<br>
+
+ 
+ <p> <span id="result2"></span></p>
+ <p> <span id="result3"></span></p>
+ 
+ <script>
+ function conversion() { 
+     inputF=document.getElementById("inputF").value;
+     Z=(2*inputF);
+     M=(2*3.14*inputF)
+     result2=document.getElementById("result2"); 
+     result2.innerHTML="the diameter is"+Z;
+     result3=document.getElementById("result3"); 
+     result3.innerHTML="the circumference is"+M;
+     
+     }
+     
+ </script>
+ </body>
+ </html
