@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>
+ <title>Fahrenheit to Celsius</title>
+ <body>
+ <h2>Meter to Kilometer converter</h2>
+ 
+ <p> <label>ENTER CENTI-METER:</label>
+ <input id="inputF" type="number" placeholder="F" >
+ <button onclick="temperatureChange1()">calculate meter and kilometer </button>
+<br>
+<!-- <p> <label>celcius</label>
+ <input id="inputG" type="number" placeholder="C" >
+ <button onclick="temperatureChange2()">calculate farenheit </button> -->
+ 
+ <p> <span id="result2"></span></p>
+ <p> <span id="outputG"></span></p>
+ <script>
+ function temperatureChange1() { 
+     inputF=document.getElementById("inputF").value;
+     Z=inputF/100;
+     M=inputF/100000;
+     result2=document.getElementById("result2"); 
+     result2.innerHTML="no of meters is"+Z;
+     outputG=document.getElementById("outputG"); 
+     outputG.innerHTML="no of kilometers is"+M;
+     
+     }
+    //  function temperatureChange2() { 
+    //  y=document.getElementById("inputG").value;
+    //  M=(y*9/5)+32;
+    //  document.getElementById("outputG").innerHTML=M; 
+    //  outputG.innerHTML="the farenheit is"+M;
+     
+    //  }
+ </script>
+ </body>
+ </html
