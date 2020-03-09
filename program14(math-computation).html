@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>perimeter of rectangle</title>
+        <script>
+            function conversion() { 
+                l1=document.getElementById("l1").value;
+                //  b1=document.getElementById("b1").value;
+                 result2=document.getElementById("result2"); 
+                 var a=((Number(l1)));
+                 var b=((Number(l1))*(Number(l1)));
+                 var c=((Number(l1))*(Number(l1))*(Number(l1)));
+                 var d=((Number(l1))*(Number(l1))*(Number(l1))*(Number(l1)));
+                result2.innerHTML="the value is"+a+"+"+b+"+"+c+"+"+d;
+
+                }
+                </script>
+    
+ 
+ </head>
+ <body>
+ <h2>Required value in Required format</h2>
+<input  type="text" id="l1" placeholder="type any number" >
+ <!-- <input  type="text" id="b1" placeholder="breadth" >  -->
+<button onclick="conversion()">calculate required value</button>
+<br>
+<p id="result2"></p>
+</body>
+</html
