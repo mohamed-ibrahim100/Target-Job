@@ -1,0 +1,69 @@
+<!-- <html>
+    <head>
+        <title>perimeter of rectangle</title>
+        <script>
+            function conversion() { 
+                l1=document.getElementById("l1").value;
+                 b1=document.getElementById("b1").value;
+                 result2=document.getElementById("result2"); 
+                 var a=(Number(l1)+Number(b1))*(2);
+                result2.innerHTML="the perimeter is"+a;
+
+                }
+                </script>
+    
+ 
+ </head>
+ <body>
+ <h2>Perimeter of rectangle</h2>
+<input  type="text" id="l1" placeholder="length" >
+ <input  type="text" id="b1" placeholder="breadth" > 
+<button onclick="conversion()">calculate perimeter of rectangle </button>
+<br>
+<p id="result2"></p>
+</body>
+</html> -->
+
+
+<html>
+    <head>
+        <title>JavaScript to print prime numbers!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function printPrime() {
+                var i = 0;
+                var j = 0;
+ 
+                limit1 = document.getElementById('limit1').value;
+                limit2 = document.getElementById('limit2').value;
+ 
+                //loop till i equals to $limit
+                for (i = limit1; i <= limit2; i++) {
+                     c = 0;
+ 
+                    for (j = 1; j <= i; j++) {
+                        // % modules will give the reminder value, so if the reminder is 0 then it is divisible
+                        if (i % j == 0) {
+                            //increment the value of c
+                            c++;
+                        }
+                    }
+ 
+                    //if the value of c is 2 then it is a prime number
+                    //because a prime number should be exactly divisible by 2 times only (itself and 1)
+                    if (c == 2) {
+                        document.getElementById("result").insertAdjacentHTML( 'beforeend',i + '<br>');
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>JavaScript to print Prime numbers!</h2>
+       Enter the number1:  <input type="number" name="limit" id="limit1" min="0" style="width: 100px;" />
+       Enter the number2:<input type="number" name="limit" id="limit2" min="0" style="width: 100px;" />
+       <input type="submit" value="Print Prime Numbers" onclick="printPrime()" name="print" />
+        <div id="result"></div>
+    </body>
+</html>
