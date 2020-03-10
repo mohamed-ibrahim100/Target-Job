@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>perimeter of rectangle</title>
+         <script>
+            function conversion() { 
+                l1=document.getElementById("l1").value;
+                
+                if(l1>0){
+                    result2=l1+" is the "+"positive number";
+                }else if (l1<0){
+                    result2=l1+" is the "+"negative number";
+
+                }else {
+                    result2=l1+" is  "+"zero";
+
+                }
+                document.getElementById("result2").innerHTML = result2;
+            }
+                </script> 
+    
+ 
+ </head>
+ <body>
+ <h2>positive or negative</h2>
+<input  type="text" id="l1" placeholder="enter any number" >
+ 
+<button onclick="conversion()">find positive or negative</button>
+<br>
+<p id="result2"></p>
+</body>
+</html>
