@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+function calculate(){
+
+     cost=document.getElementById("cost").value;
+     sell=document.getElementById("sell").value;
+if(cost>sell){
+    business=document.getElementById("business");
+    var a=(Number(cost)-Number(sell));
+    business.innerHTML="loss rs"+a;
+}else if(sell>cost){
+    business=document.getElementById("business");
+    var b=(Number(sell)-Number(cost));
+    business.innerHTML="gain rs"+b;
+    
+}
+}
+
+
+
+    </script>
+<title>profit&loss</title>
+</head>
+<body>
+    Enter cost price:<input type="text" id="cost"><br><br>
+    Enter selling price:<input type="text" id="sell"><br><br>
+    <button onclick="calculate()">calculate pofit or loss</button>
+    <p id="business"></p>
+</body>
+</html>
