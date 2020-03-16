@@ -1,0 +1,24 @@
+<html>
+<head>
+
+<title>pattern</title>
+</head>
+<body>
+    <script>
+var ages = [10, 20, 30, 40, 50]; 
+
+  function marriageeligibility(age){
+      return age>=18;
+  }
+  function myfunction(){
+      document.getElementById("horse").innerHTML=ages.find(marriageeligibility);
+
+  }
+
+</script>
+<p id="horse"></p>
+<button onclick="myfunction()">Try it</button>
+
+
+</body>
+</html>
