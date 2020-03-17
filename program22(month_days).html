@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>no of months</title>
+        <script>
+function myfunction(){
+var months=document.getElementById("box").value;
+switch(months){
+    case "january":
+    text="This is first month with 31 days";
+    break;
+    case "february":
+    text="This is second month with 28 or 29 days";
+    break;
+    case "march":
+    text="This is third month with 31 days";
+    break;
+    case "april":
+    text="This is fourth month with 30 days";
+    break;
+    case "may":
+    text="This is fifth month with 31 days";
+    break;
+    case "june":
+    text="This is sixth month with 30 days";
+    break;
+    case "july":
+    text="This is seventh month with 31 days";
+    break;
+    case "august":
+    text="This is eigth month with 31 days";
+    break;
+    case "september":
+    text="This is ninth month with 30 days";
+    break;
+    case "october":
+    text="This is tenth month with 31 days";
+    break;
+    case "november":
+    text="This is eleventh month with 30 days";
+    break;
+    case "december":
+    text="This is twelveth month with 31 days";
+    break;
+    
+}
+document.getElementById("month").innerHTML=text;
+}
+        </script>
+    </head>
+    <body>
+Enter month name:<input type="text" id="box">
+<button onclick="myfunction()">Get no of days</button>
+<p id="month"></p>
+    </body>
+</html>
