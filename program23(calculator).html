@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>perimeter of rectangle</title>
+        <script>
+          
+            function calc() { 
+                
+              var a=document.getElementById('b1').value;
+              var b=document.getElementById('b2').value;
+              var y=document.getElementById('symbol').value;
+
+
+                 switch(y){
+                   case '+':alert(a+"+"+b+"="+(a+b));
+                   break;
+                   case '-':alert(a+"-"+b+"="+(a-b));
+                   break;
+                   case '*':alert(a+"*"+b+"="+(a*b));
+                   break;
+                   case '/':alert(a+"/"+b+"="+(a/b));
+                   break;
+                   default:alert("wrong input")
+                   break;
+                 }
+            }
+
+
+                </script>
+    
+ 
+ </head>
+ <body>
+ <h2>calculator</h2>
+
+Enter the first number:<input  type="text" id="b1" placeholder="first no." ><br><br>
+Enter the first number:<input  type="text" id="b2" placeholder="second no." > <br><br>
+<label>+,-,*,/ :</label>
+<input  type="text" id="symbol" >
+<input type="submit" onclick="calc()">
+
+</body>
+</html>
